@@ -1,2 +1,1 @@
-# artwork
-ShastraOS Icons and Wallpapers
+## ShastraOS Icons and Wallpapers

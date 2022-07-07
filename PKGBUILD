@@ -1,4 +1,4 @@
-# Maintainer: ShastraOS <vivek@shastraos.co>
+# Maintainer: Vivek Pal <vivek@shastraos.co>
 
 pkgname=shastraos-artwork
 pkgver=0.1
