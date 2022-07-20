@@ -1,0 +1,25 @@
+# Maintainer: Vivek Pal <vivekpal.in>
+
+pkgname=shastraos-backgrounds
+pkgver=0.1
+pkgrel=1
+pkgdesc="Default backgrounds for ShastraOS"
+url="https://github.com/shastra-os/artwork/$pkgname"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=()
+conflicts=()
+groups=(artwork)
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _bgdir=${pkgdir}/usr/share/backgrounds
+	mkdir -p "$_bgdir"
+	cp -r ${srcdir}/* "$_bgdir"
+}
